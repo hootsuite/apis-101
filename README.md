@@ -11,7 +11,7 @@ In the project directory:
 
 ## Workshop
 
-Follow the instructions in [src/Quotes.js](https://github.com/hootsuite/apis-101/blob/master/src/Quotes.js) to make the Generate Quotes button work!
+Follow the instructions in [src/Quotes.js](https://github.com/hootsuite/apis-101/blob/master/src/Quotes.js) to make the 'Generate Quotes' button work!
 
 ## Learn More
 
