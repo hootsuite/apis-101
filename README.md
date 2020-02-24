@@ -5,10 +5,13 @@ This is starter code for a beginners-friendly introduction to APIs workshop. Thi
 ## Getting Started
 
 In the project directory:
-1. Run `npm install` which will download all dependencies for this project
-2. Run `npm start` which will start the project
+1. Download and install [node](https://nodejs.org/)
+2. Run `npm install` which will download all dependencies for this project
+3. Run `npm start` which will start the project
 
-The 'Generate Quotes' button will do nothing. Look inside src/Quotes.js and follow the comments to make the button work!
+## Workshop
+
+Follow the instructions in [src/Quotes.js](https://github.com/hootsuite/apis-101/blob/master/src/Quotes.js) to make the Generate Quotes button work!
 
 ## Learn More
 
