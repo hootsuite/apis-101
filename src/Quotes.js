@@ -1,33 +1,22 @@
 import React, { useState } from 'react';
 
+// clicking generate quotes will give us all quotes from this author
+const AUTHOR = 'Buddha'
+
 function Quotes() {
-  // We are using a React feature called "Hooks"
-  // You can read more about React Hooks here https://reactjs.org/docs/hooks-intro.html
-  // Bonus: Can quote include author? Then display "Here is a default quote" -Author
-  const [quote, setQuote] = useState('Here is a default quote');
+  const [quotes, setQuotes] = useState(['Here is a default quote']);
 
-  // Bonus: Get all quotes from an author (i.e Albert Einstein, Aristotle, Buddha) on click of button
-
-  function generateQuoteClicked() {
-    // This function will trigger every time the "Generate Quote" button is clicked
-    // Make your API request here to get a random quote: https://pprathameshmore.github.io/QuoteGarden/#get-a-random-quote
-    // Have a look at https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
-    // The section that reads "A basic fetch request is really simple to set up" will help you with this
-    fetch(/* TODO */)
+  function generateQuotesClicked() {
+    fetch(`https://quote-garden.herokuapp.com/quotes/author/${AUTHOR}`)
       .then(resp => resp.json())  
-      .then(resp => {
-          // resp is what we're getting back from the API call we make
-          // It should match the API Documentation we read 
-          // Take a look at the resp in your browser console, then use setQuote to set the quote
-          console.log(resp);
-      })
-      .catch(error => console.log('error: ', error)) // What would you show to the user in case of error?
+      .then(resp => setQuotes(resp.results.map(quote => quote.quoteText)))
+      .catch(error => console.log('error: ', error))
   }
 
   return (
     <div className="Quotes">
-      <div className="Quote">"{quote}"</div>
-      <button onClick={generateQuoteClicked}>Generate Quote</button>
+      {quotes.map(quote => <div key={quote} className="Quote">"{quote}"</div>)}
+      <button onClick={generateQuotesClicked}>Generate Quotes</button>
     </div>
   );
 }
