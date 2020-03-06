@@ -6,12 +6,18 @@ This is starter code for a beginners-friendly introduction to APIs workshop. Thi
 
 In the project directory:
 1. Download and install [node](https://nodejs.org/)
-2. Run `npm install` which will download all dependencies for this project
-3. Run `npm start` which will start the project
+2. Open `Terminal` on MacOS or `PowerShell` on Windows
+3. Run `git clone git@github.com:hootsuite/apis-101.git` then `cd apis-101`
+4. Run `npm install` which will download all dependencies for this project
+5. Run `npm start` which will start the project
 
 ## Workshop
 
 Follow the instructions in [src/Quotes.js](https://github.com/hootsuite/apis-101/blob/master/src/Quotes.js) to make the 'Generate Quotes' button work!
+
+### Solutions
+
+You can view solutions by switching branches on GitHub to either `solution`, `solution-include-author` or `solution-quotes-by-author`. Do this by clicking the button that reads `Branch: master`.
 
 ## Learn More
 
