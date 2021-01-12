@@ -4,9 +4,9 @@ function Quotes() {
   const [quote, setQuote] = useState('Here is a default quote');
 
   function generateQuoteClicked() {
-    fetch("https://quote-garden.herokuapp.com/quotes/random")
+    fetch("https://quote-garden.herokuapp.com/api/v3/quotes/random")
       .then(resp => resp.json())  
-      .then(resp => setQuote(resp.quoteText))
+      .then(resp => setQuote(resp.data[0].quoteText))
       .catch(error => console.log('error: ', error))
   }
 
