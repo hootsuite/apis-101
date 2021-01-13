@@ -10,7 +10,7 @@ function Quotes() {
 
   function generateQuoteClicked() {
     // This function will trigger every time the "Generate Quote" button is clicked
-    // Make your API request here to get a random quote: https://pprathameshmore.github.io/QuoteGarden/#get-a-random-quote
+    // Make your API request here to get a random quote: https://github.com/pprathameshmore/QuoteGarden#get-a-random-quote
     // Have a look at https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
     // The section that reads "A basic fetch request is really simple to set up" will help you with this
     fetch(/* TODO */)

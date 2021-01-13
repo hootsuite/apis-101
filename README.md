@@ -7,7 +7,8 @@ This is starter code for a beginners-friendly introduction to APIs workshop. Thi
 In the project directory:
 1. Download and install [node](https://nodejs.org/)
 2. Open `Terminal` on MacOS or `PowerShell` on Windows
-3. Run `git clone git@github.com:hootsuite/apis-101.git` then `cd apis-101`
+3. Clone this git repository by running `git clone https://github.com/hootsuite/apis-101.git` then `cd apis-101`. 
+If you don't have git installed or encounter other issues, you should be able to download [a zipfile of the code directly](https://github.com/hootsuite/apis-101/archive/master.zip)
 4. Run `npm install` which will download all dependencies for this project
 5. Run `npm start` which will start the project
 
