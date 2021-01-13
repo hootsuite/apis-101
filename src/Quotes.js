@@ -7,9 +7,9 @@ function Quotes() {
   const [quotes, setQuotes] = useState(['Here is a default quote']);
 
   function generateQuotesClicked() {
-    fetch(`https://quote-garden.herokuapp.com/quotes/author/${AUTHOR}`)
+    fetch(` https://quote-garden.herokuapp.com/api/v3/quotes?author=${AUTHOR}`)
       .then(resp => resp.json())  
-      .then(resp => setQuotes(resp.results.map(quote => quote.quoteText)))
+      .then(resp => setQuotes(resp.data.map(quote => quote.quoteText)))
       .catch(error => console.log('error: ', error))
   }
 
